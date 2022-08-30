@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<title>Kitteh vs. Zombie</title>
+    <style>
+      body {color:orange; font-family:Verdana;}
+      h2 {text-align:center; font-family:'Fontdiner Swanky', cursive;}
+      h1 {text-align:center; font-family:'Fontdiner Swanky', cursive;}
+      a {color:orange;}
+      span {margin-left:20px; margin-right:20px;}
+      #container {position:relative; margin-left:auto; margin-right:auto; width:1100px;}
+      #scorebar {font-family:'Fontdiner Swanky', cursive; font-size:24px; margin-left:40px;}
+      #gamefield {position:relative; width:675px; height:500px; float:left;}
+      #rules {position:relative; width:400px; height:500px; float:right;}
+      #game {position:relative; border: 10px solid orange;}
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+  </head>
+  <body style="background:black;">
+    <h1>Kitteh vs. Zombie Halloween Game</h1>
+    <div id="container">
+      <div id="gamefield">
+        <div id="scorebar"><span>Kitteh: <span id="kp"></span></span><span>Lives: <span id="el"></span></span><span>Zombie: <span id="zp"></span></span></div>
+        <canvas id="game" width="640" height="480"></canvas>
+      </div>
+      <div id="rules">
+        <h2>Rules:</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="kitteh.png" /></td>
+              <td><strong>Kitteh.</strong> Has 3 lives. Must smash pumpkins. Gets a new life every 60 pumpkins. Use arrow keys to move.</td>
+            </tr>
+            <tr>
+              <td><img src="zombie.png" /></td>
+              <td><strong>Zombie.</strong> Eats pumpkin brains for a small speed boost. Kills kitteh. Avoid.</td>
+            </tr>
+            <tr>
+              <td><img src="pumpkin.png" /></td>
+              <td><strong>Pumpkin.</strong> An object of desire.</td>
+            </tr>
+            <tr>
+              <td><img src="candy.png" /></td>
+              <td><strong>Candy.</strong> Appears when kitteh gets 10 pumpkins. Counts as a pumpkin.
+                Eaten by kitteh, resets zombie's speed.
+                Eaten by zombie, grants a major speed boost.</td>
+            </tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr>
+              <td><strong><p style="text-align:center;">Tip:</p></strong></td>
+              <td>If kitteh smashes the 11th pumpkin once the candy appears, it will then disapear. Use this knowledge wisely.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center; position:relative; top:100px;">Icons by <a href="http://yootheme.com/icons/freebies">yootheme.com</a> — free halloween set.</p>
+      <br><br><br>
+      <p style="text-align:center; position:relative; top:100px;"><strong>2022 UPDATE:</strong> I wrote this game in 2014 and now in 2022 I don't remember where the sounds are from.<br>If they belong to you, let me know and I'll either credit you or take them down.</p>
+    </div>
+    <script src="kitteh.js"></script>
+  </body>
+</html>
